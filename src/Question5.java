@@ -8,6 +8,7 @@ void main() {
     saisie = IO.readln("Entrez deuxième nombre entier: ");
     int saisieConvertie2 = Integer.parseInt(saisie);
 
+    // Traitement des données
     for (int i = 1; i <= saisieConvertie1 ; i++) {
         for (int j = 1; j <= saisieConvertie2; j++) {
             IO.println(i + " x " + j + " = " + i * j);
