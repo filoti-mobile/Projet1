@@ -10,7 +10,7 @@ void main() {
         IO.println("Erreur!");
     } else {
         int compteur = 1;
-        IO.println("Les diviseurs de 26 sont: ");
+        IO.println("Les diviseurs de " + saisieConvertie + " sont: ");
         while (compteur <= saisieConvertie / 2) { // Pas besoin d'aller plus que la moitié de saisieConvertie
             if (saisieConvertie % compteur == 0) {
                 IO.println(compteur);
