@@ -13,7 +13,11 @@ void main() {
 
     for (int i = 1; i <= saisieConvertie; i++) { // saisieConvertie est le nombre de colones
         for (int j = 1; j <= i; j++) { // rangées doivent être inférieurs ou égales à la saisieConvertie
-            IO.print(j);
+            if(j < 10) { // 123456789
+                IO.print(j);
+            } else {        // 12345678901234567890 à la place de 123456789DIXONZEDOUZE
+                IO.print(j % 10);
+            }
         }
 
         IO.println();
