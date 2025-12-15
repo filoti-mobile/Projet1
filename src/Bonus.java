@@ -21,7 +21,6 @@ void main() {
                 max = botDevinette - 1;
                 IO.println("Plus bas");
             }
-
             tentative++;
             // BOT DEVINE ENCORE
             botDevinette = (int) (Math.random() * (max - min + 1)) + min;
