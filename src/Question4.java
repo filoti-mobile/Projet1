@@ -11,7 +11,7 @@ void main() {
     } else {
         int compteur = 1;
         IO.println("Les diviseurs de " + saisieConvertie + " sont: ");
-        while (compteur <= saisieConvertie / 2) { // Pas besoin d'aller plus que la moitié de saisieConvertie
+        while (compteur <= saisieConvertie) {
             if (saisieConvertie % compteur == 0) {
                 IO.println(compteur);
             }
