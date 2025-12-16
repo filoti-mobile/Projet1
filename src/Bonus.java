@@ -11,7 +11,9 @@ void main() {
         nombreSecret = Integer.parseInt(IO.readln("Entrez votre nombre secret entre " + min + " et " + max + " "));
         // BOT DEVINE MAINTENANT
         int botDevinette = (int) (Math.random() * (max - min + 1)) + min;
-        IO.println("BOT a deviné: " + botDevinette); //EN ATTENTE DE VOTRE RÉACTION...
+        IO.println("BOT a deviné: " + botDevinette); // EN ATTENTE DE VOTRE RÉACTION...
+        IO.println("w: Plus haut, s: Plus bas");
+
         while (botDevinette != nombreSecret) {
             String action = IO.readln();
             if (action.equals("w") || action.equals("W")) { // w ou W >>> plus haut
@@ -24,7 +26,8 @@ void main() {
             tentative++;
             // BOT DEVINE ENCORE
             botDevinette = (int) (Math.random() * (max - min + 1)) + min;
-            IO.println("BOT a deviné: " + botDevinette);
+            IO.println("BOT a deviné: " + botDevinette); // EN ATTENTE DE VOTRE RÉACTION...
+            IO.println("w: Plus haut, s: Plus bas");
         }
         IO.println("Bravo! Vous avez trouvé le nombre en " + tentative + " essais");
     } else {
