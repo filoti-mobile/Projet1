@@ -20,6 +20,6 @@ void main() {
     resistanceEquivalente = 1.0 / cumulDesValeursInversees;
 
     // Afficher resistanceEquivalente formatée à une précision de 2 décimaux
-    IO.println(String.format("%,.2f", resistanceEquivalente));
+    IO.println(String.format("La valeur de la résistance équivalente est " + "%,.2f", resistanceEquivalente));
 
 }
