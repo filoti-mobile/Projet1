@@ -19,9 +19,12 @@ void main() {
             if (action.equals("w") || action.equals("W")) { // w ou W >>> plus haut
                 min = botDevinette + 1;
                 IO.println("Plus haut");
+                IO.println("-------------------------");
+
             } else if (action.equals("s") || action.equals("S")) { // s ou S >>> plus bas
                 max = botDevinette - 1;
                 IO.println("Plus bas");
+                IO.println("-------------------------");
             }
             tentative++;
             // BOT DEVINE ENCORE
