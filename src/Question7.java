@@ -5,15 +5,21 @@ void main() {
     String saisie = IO.readln("Entrez une phrase: ");
     int nombreDeVoyelles = 0;
     for (int i = 0; i < saisie.length(); i++) {
-        char lettreCourante = saisie.toLowerCase().charAt(i); // convertir saisie en minuscule sinon faut ajouter les cas des voyelles en majuscule
+        char lettreCourante = saisie.charAt(i);
 
-        switch (lettreCourante) { // a, o, u, i, e ou y
+        switch (lettreCourante) { // a, o, u, i, e ou y sans oublier les voyelles en majuscule
             case 'a':
             case 'o':
             case 'u':
             case 'i':
             case 'e':
             case 'y':
+            case 'A':
+            case 'O':
+            case 'U':
+            case 'I':
+            case 'E':
+            case 'Y':
                 nombreDeVoyelles++;
                 break;
             default:
